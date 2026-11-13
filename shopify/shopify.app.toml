@@ -1,0 +1,25 @@
+# Shopify app configuration for StoreStake. Deploy with: shopify app deploy (from this folder).
+client_id = "d1c550c7f30ccb6469cdede71f15b04d"
+name = "StoreStake"
+application_url = "https://storestake.com/api/shopify/entry"
+embedded = false
+
+[access_scopes]
+scopes = "read_orders,read_customers"
+
+[auth]
+redirect_urls = ["https://storestake.com/api/shopify/callback"]
+
+[webhooks]
+api_version = "2025-07"
+
+  [[webhooks.subscriptions]]
+  topics = ["app/uninstalled"]
+  uri = "https://storestake.com/api/shopify/webhooks"
+
+  [[webhooks.subscriptions]]
+  compliance_topics = ["customers/data_request", "customers/redact", "shop/redact"]
+  uri = "https://storestake.com/api/shopify/webhooks"
+
+[build]
+automatically_update_urls_on_dev = false

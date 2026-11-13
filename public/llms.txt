@@ -1,0 +1,20 @@
+# StoreStake
+
+> StoreStake is how Bobby and Kristi Samai invest their own money in small Shopify stores through KB Company LLC (Oregon). Bobby built the Shopify brand ionbottles to $8.8 million in sales and sold it in June 2026.
+
+- Who: Shopify stores doing $3,000–$25,000 a month in sales, selling for 6+ months, with their own brand or product.
+- Check size: $2,000–$25,000.
+- Stake: 3–20% minority stake; the founder keeps control.
+- Valuation: 2.5x yearly profit, or half of yearly sales if higher.
+- Payouts: each quarter the store pays out half its profit to its owners in proportion.
+- Exit: after two years the founder can buy StoreStake out at the same formula.
+- Not a loan: no interest, no repayment schedule, no daily remittance. StoreStake does not buy whole stores.
+- Apply: https://storestake.com/apply (about a minute; Shopify sales report can be added later).
+
+## Key pages
+- [Shopify store investors](https://storestake.com/shopify-store-investors): who invests in small Shopify stores and the deal terms
+- [Sell my Shopify store](https://storestake.com/sell-my-shopify-store): selling a whole store vs. selling a stake
+- [Shark Tank for Shopify stores](https://storestake.com/shark-tank-for-shopify-stores): a shark-style deal sized for small stores (not affiliated with the show)
+- [Example deals](https://storestake.com/examples)
+- [Valuation calculator](https://storestake.com/valuation-calculator)
+- [Guides](https://storestake.com/guides): funding options, Shopify Capital alternatives, valuation, profit, selling a stake

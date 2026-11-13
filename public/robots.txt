@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin
+Disallow: /account
+Disallow: /stats
+Disallow: /api/
+Sitemap: https://storestake.com/sitemap.xml

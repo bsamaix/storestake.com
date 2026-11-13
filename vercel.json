@@ -1,0 +1,78 @@
+{
+  "outputDirectory": "public",
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.storestake.com"
+        }
+      ],
+      "destination": "https://storestake.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/deals",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/deal",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/join",
+      "destination": "/apply",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'sha256-GC8h3gDBdjMrfIVb20bmgf1AeWkTax6URVMxfcHrzdI=' 'sha256-IZ2gHMr1y1wywliy2IHV6mJd5vyBmNweArDHdJUVov8=' 'sha256-VklpZmyJRyRZZUobFZQAkwp2zGbX8WZpdwM3TxAtf6A=' 'sha256-X9ZPtOv2uvZREEbFnqKwbfXmfiGDTH5qfUJG8djY2Yg=' 'sha256-cspbP+dHQjAP1/52xd/6fL8Rw/CUNjC63LA4NZEUmSs=' 'sha256-f7VWIcp50R0gMO5NFq0dic/dqP7aaNoIqU9DkiA5BiA=' 'sha256-jw5tkRkrmKEKlmGWR2BM0CabhwyHMBiRNDkN92MwZ3s=' 'sha256-q7KVrJOqEJ1BiuOSxAW7MMm/7odEVUnrBxq8Q08ylsw=' 'sha256-s2l3wPu/MSvOZ2XTP5xYSwTFVLNB1FKonHVq1PH9WBg=' 'sha256-wtvNnmN3c/YS/rJupA2Vv+pShEKow+wTK+g9ti48ZuE=' 'sha256-xWnaO+btcX5SN2fpX3g3+JkdwPnjwWrRCppe0nKK15w=' https://connect.facebook.net; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://www.facebook.com; media-src 'self'; connect-src 'self' https://www.facebook.com https://connect.facebook.net; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=()"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
+      ]
+    },
+    {
+      "source": "/assets/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/nudge",
+      "schedule": "17 16 * * *"
+    }
+  ]
+}

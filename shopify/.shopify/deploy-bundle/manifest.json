@@ -1,0 +1,75 @@
+{
+  "name": "StoreStake",
+  "handle": "",
+  "modules": [
+    {
+      "type": "privacy_compliance_webhooks",
+      "handle": "privacy_compliance_webhooks",
+      "uid": "privacy_compliance_webhooks",
+      "assets": "privacy_compliance_webhooks",
+      "target": "",
+      "config": {
+        "api_version": "2025-07",
+        "customers_redact_url": "https://storestake.com/api/shopify/webhooks",
+        "customers_data_request_url": "https://storestake.com/api/shopify/webhooks",
+        "shop_redact_url": "https://storestake.com/api/shopify/webhooks"
+      }
+    },
+    {
+      "type": "app_access",
+      "handle": "app_access",
+      "uid": "app_access",
+      "assets": "app_access",
+      "target": "",
+      "config": {
+        "scopes": "read_customers,read_orders",
+        "redirect_url_allowlist": [
+          "https://storestake.com/api/shopify/callback"
+        ]
+      }
+    },
+    {
+      "type": "webhooks",
+      "handle": "webhooks",
+      "uid": "webhooks",
+      "assets": "webhooks",
+      "target": "",
+      "config": {
+        "api_version": "2025-07"
+      }
+    },
+    {
+      "type": "app_home",
+      "handle": "app_home",
+      "uid": "app_home",
+      "assets": "app_home",
+      "target": "",
+      "config": {
+        "app_url": "https://storestake.com/api/shopify/entry",
+        "embedded": false
+      }
+    },
+    {
+      "type": "branding",
+      "handle": "branding",
+      "uid": "branding",
+      "assets": "branding",
+      "target": "",
+      "config": {
+        "name": "StoreStake"
+      }
+    },
+    {
+      "type": "webhook_subscription",
+      "handle": "8400ff13ebb451957e39106cd2d42ca90bd0f13d",
+      "uid": "app/uninstalled::::https://storestake.com/api/shopify/webhooks",
+      "assets": "app/uninstalled::::https://storestake.com/api/shopify/webhooks",
+      "target": "",
+      "config": {
+        "topic": "app/uninstalled",
+        "api_version": "2025-07",
+        "uri": "https://storestake.com/api/shopify/webhooks"
+      }
+    }
+  ]
+}
